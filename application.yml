@@ -17,4 +17,6 @@ management:
 eureka:
   client:
     service-url:
-       defaultZone: http://peer1:1010/eureka/, http://peer2:1011/eureka/   
+       defaultZone: http://peer1:1010/eureka/, http://peer2:1011/eureka/
+info:
+  a: true       
