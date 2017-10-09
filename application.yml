@@ -1,3 +1,22 @@
-info:
-  n: abcdefg
-      
+spring:
+  cloud:
+    config:
+      discovery:
+        service-id: config-server
+        enabled: true
+      profile: default
+      label: master
+  rabbitmq:  
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest   
+server:
+  port: 2011
+management:
+  security:
+    enabled: false 
+eureka:
+  client:
+    service-url:
+       defaultZone: http://peer1:1010/eureka/, http://peer2:1011/eureka/   
