@@ -1,17 +1,4 @@
-spring:
-  cloud:
-    config:
-      discovery:
-        service-id: config-server
-        enabled: true
-      profile: default
-      label: master
-  rabbitmq:  
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest   
-management:
+ management:
   security:
     enabled: false 
 eureka:
