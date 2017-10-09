@@ -11,8 +11,6 @@ spring:
     port: 5672
     username: guest
     password: guest   
-server:
-  port: 2011
 management:
   security:
     enabled: false 
